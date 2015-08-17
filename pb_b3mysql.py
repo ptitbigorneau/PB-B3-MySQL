@@ -21,7 +21,8 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
-import MySQLdb
+#import pymysql
+import pymysql
 import os, sys
 
 __author__  = 'PtitBigorneau'
@@ -132,7 +133,7 @@ def dtestbd(user, pwd, namebd):
 
     try: 
 
-        conn=MySQLdb.connect('localhost', user, pwd, namebd)
+        conn=pymysql.connect('localhost', user, pwd, namebd)
         
         return True
     
@@ -238,7 +239,7 @@ def coroot(proot):
 
     try: 
 
-        conn=MySQLdb.connect('localhost','root', '%s'%(proot))
+        conn=pymysql.connect('localhost','root', '%s'%(proot))
 
     except:
  
