@@ -26,7 +26,7 @@ import pymysql
 import os, sys
 
 __author__  = 'PtitBigorneau'
-__version__ = 'b1.0'
+__version__ = 'b2.0'
 
 def dimportsql():
 
